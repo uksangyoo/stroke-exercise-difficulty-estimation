@@ -1,0 +1,25 @@
+pid,study,age,gender,affected_arm,ethnicity,MMSE Score,Fugl-Meyer Score,AAUT AOU Score,AAUT QOM Score,sAAUT,cAAUT,SUS Score
+10,pilot,56,female,l,caucasian,30,N/A,N/A,N/A,N/A,N/A,85
+11,pilot,72,female,l,white/ jewish,30,N/A,N/A,N/A,N/A,N/A,75
+12,pilot,80,male,l,caucasian,29,N/A,N/A,N/A,N/A,N/A,87.5
+13,pilot,82,male,l,white,29,N/A,N/A,N/A,N/A,N/A,97.5
+14,pilot,74,female,l,caucasian,28,N/A,N/A,N/A,N/A,N/A,95
+15,pilot,45,male,l,asian,30,N/A,N/A,N/A,N/A,N/A,100
+16,pilot,63,male,l,white,28,N/A,N/A,N/A,N/A,N/A,72.5
+17,pilot,71,male,l,black american,30,N/A,N/A,N/A,N/A,N/A,97.5
+18,pilot,64,female,l,African American,30,N/A,N/A,N/A,N/A,N/A,90
+20,pilot,68,female,l,Asian - Chinese,30,N/A,N/A,N/A,N/A,N/A,75
+21,main,52,M,l,Filipino,30,61,N/A,N/A,N/A,N/A,77.5
+23,main,49,Male,r,American/Mexican,29,42,0.33,1.083,0.42,1.5,95
+25,main,60,Female,l,hispanic,28,47,0.15,0.69,2.31,3,52.5
+26,main,65,Female,l,dutch/Indonesian,28,45,0.77,2.385,0.615,3,90
+27,main,54,Female,r,Filipino,28,62,0.21,0.86,4.14,5,85
+28,main,64,female,r,white,30,64,0.21,1.071,3.29,4.36,95
+29,main,66,male,r,Black,30,60,0.15,0.923,3,3.92,67.5
+30,main,65,male,r,Black,29,53,0.85,2.692,0.15,2.85,72.5
+31,main,32,female,l,latina,30,65,0.29,1.929,2.86,4.79,82.5
+32,main,55,male,r,white,28,59,0.5,1.714,1.29,3,77.5
+33,main,85,female,r,chinese,19,,0,0.25,3.917,4.17,87.5
+35,main,55,male,l,caucasian,30,62,0.14,1.642,2.93,4.57,80.5
+36,main,44,male,r,latino,29,28,0.77,1.538,0.46,2,92.5
+37,main,53,male,r,pakistani,29,50,0.85,1.714,0.43,2.14,77.5

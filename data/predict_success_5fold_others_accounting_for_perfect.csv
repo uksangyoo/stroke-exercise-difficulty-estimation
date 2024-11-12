@@ -1,0 +1,241 @@
+,classifier,pid,visit,accuracy,neg_log_loss
+0,MLPClassifier(max_iter=1000),21,1,0.9708994708994709,0.13138531562954206
+1,MLPClassifier(max_iter=1000),21,2,1.0,-0.0
+2,MLPClassifier(max_iter=1000),21,3,1.0,-0.0
+3,MLPClassifier(max_iter=1000),23,1,0.972167487684729,0.11949579996709818
+4,MLPClassifier(max_iter=1000),23,2,0.9528735632183908,0.1841374728713852
+5,MLPClassifier(max_iter=1000),23,3,0.7125615763546798,0.5477672442091521
+6,MLPClassifier(max_iter=1000),25,1,0.6823613086770981,0.6271160084419052
+7,MLPClassifier(max_iter=1000),25,2,0.811965811965812,0.48100704825936774
+8,MLPClassifier(max_iter=1000),25,3,0.9727272727272727,0.13518954020474316
+9,MLPClassifier(max_iter=1000),26,1,0.5857142857142856,0.6874518013969916
+10,MLPClassifier(max_iter=1000),26,2,0.688508064516129,0.5963871937285145
+11,MLPClassifier(max_iter=1000),26,3,0.5747899159663865,0.7134681557340119
+12,MLPClassifier(max_iter=1000),27,1,1.0,-0.0
+13,MLPClassifier(max_iter=1000),27,2,1.0,-0.0
+14,MLPClassifier(max_iter=1000),27,3,1.0,-0.0
+15,MLPClassifier(max_iter=1000),28,1,1.0,-0.0
+16,MLPClassifier(max_iter=1000),28,2,1.0,-0.0
+17,MLPClassifier(max_iter=1000),28,3,1.0,-0.0
+18,MLPClassifier(max_iter=1000),29,1,0.9866666666666667,0.07414424362426657
+19,MLPClassifier(max_iter=1000),29,2,0.96,0.1701818372446438
+20,MLPClassifier(max_iter=1000),29,3,1.0,-0.0
+21,MLPClassifier(max_iter=1000),30,1,0.9795402298850575,0.09240757101724331
+22,MLPClassifier(max_iter=1000),30,2,0.973103448275862,0.12816649058516927
+23,MLPClassifier(max_iter=1000),30,3,0.9870967741935484,0.07384589747893655
+24,MLPClassifier(max_iter=1000),31,1,1.0,-0.0
+25,MLPClassifier(max_iter=1000),31,2,1.0,-0.0
+26,MLPClassifier(max_iter=1000),31,3,1.0,-0.0
+27,MLPClassifier(max_iter=1000),32,1,0.9888888888888889,0.04740631624116459
+28,MLPClassifier(max_iter=1000),32,2,1.0,-0.0
+29,MLPClassifier(max_iter=1000),33,1,1.0,-0.0
+30,MLPClassifier(max_iter=1000),33,2,1.0,-0.0
+31,MLPClassifier(max_iter=1000),33,3,1.0,-0.0
+32,MLPClassifier(max_iter=1000),35,1,1.0,-0.0
+33,MLPClassifier(max_iter=1000),35,2,1.0,-0.0
+34,MLPClassifier(max_iter=1000),36,1,0.8206153846153846,0.4921674532963943
+35,MLPClassifier(max_iter=1000),36,2,0.8532019704433497,0.42730526530359736
+36,MLPClassifier(max_iter=1000),36,3,0.7501149425287357,0.5598801690864694
+37,MLPClassifier(max_iter=1000),37,1,0.9777777777777779,0.1118461599726962
+38,MLPClassifier(max_iter=1000),37,2,0.5518279569892472,0.7031513758832839
+39,MLPClassifier(max_iter=1000),37,3,0.5803030303030303,0.6946583904480091
+40,KNeighborsClassifier(),21,1,0.9708994708994709,0.7725862958528446
+41,KNeighborsClassifier(),21,2,1.0,-0.0
+42,KNeighborsClassifier(),21,3,1.0,-0.0
+43,KNeighborsClassifier(),23,1,0.972167487684729,0.7581706339088423
+44,KNeighborsClassifier(),23,2,0.9528735632183908,0.7906288718835645
+45,KNeighborsClassifier(),23,3,0.7332512315270937,1.4523308891910154
+46,KNeighborsClassifier(),25,1,0.5916073968705549,1.9369176548447442
+47,KNeighborsClassifier(),25,2,0.7817663817663817,1.6312853338516746
+48,KNeighborsClassifier(),25,3,0.9727272727272727,0.9440170138939721
+49,KNeighborsClassifier(),26,1,0.5571428571428572,1.237030506057039
+50,KNeighborsClassifier(),26,2,0.6254032258064516,1.8932574086500984
+51,KNeighborsClassifier(),26,3,0.5689075630252101,1.8749425801717834
+52,KNeighborsClassifier(),27,1,1.0,-0.0
+53,KNeighborsClassifier(),27,2,1.0,-0.0
+54,KNeighborsClassifier(),27,3,1.0,-0.0
+55,KNeighborsClassifier(),28,1,1.0,-0.0
+56,KNeighborsClassifier(),28,2,1.0,-0.0
+57,KNeighborsClassifier(),28,3,1.0,-0.0
+58,KNeighborsClassifier(),29,1,0.9866666666666667,0.4635029272487349
+59,KNeighborsClassifier(),29,2,0.96,0.6170946876483274
+60,KNeighborsClassifier(),29,3,1.0,-0.0
+61,KNeighborsClassifier(),30,1,0.9795402298850575,0.2727895918513513
+62,KNeighborsClassifier(),30,2,0.973103448275862,0.9440256210664252
+63,KNeighborsClassifier(),30,3,0.9870967741935484,0.4456719482882698
+64,KNeighborsClassifier(),31,1,1.0,-0.0
+65,KNeighborsClassifier(),31,2,1.0,-0.0
+66,KNeighborsClassifier(),31,3,1.0,-0.0
+67,KNeighborsClassifier(),32,1,0.9888888888888889,0.20082785502652806
+68,KNeighborsClassifier(),32,2,1.0,-0.0
+69,KNeighborsClassifier(),33,1,1.0,-0.0
+70,KNeighborsClassifier(),33,2,1.0,-0.0
+71,KNeighborsClassifier(),33,3,1.0,-0.0
+72,KNeighborsClassifier(),35,1,1.0,-0.0
+73,KNeighborsClassifier(),35,2,1.0,-0.0
+74,KNeighborsClassifier(),36,1,0.788923076923077,1.965125652530464
+75,KNeighborsClassifier(),36,2,0.8389162561576354,2.2283681182702897
+76,KNeighborsClassifier(),36,3,0.6960919540229884,2.348205941490349
+77,KNeighborsClassifier(),37,1,0.9777777777777779,0.7749842515402713
+78,KNeighborsClassifier(),37,2,0.5129032258064516,2.4904798005262814
+79,KNeighborsClassifier(),37,3,0.531439393939394,3.183679391927504
+80,RandomForestClassifier(),21,1,0.9708994708994709,0.3220298256245873
+81,RandomForestClassifier(),21,2,1.0,-0.0
+82,RandomForestClassifier(),21,3,1.0,-0.0
+83,RandomForestClassifier(),23,1,0.972167487684729,0.36427529474741965
+84,RandomForestClassifier(),23,2,0.9528735632183908,0.19744121150717353
+85,RandomForestClassifier(),23,3,0.7618226600985223,0.5791023151168975
+86,RandomForestClassifier(),25,1,0.6073968705547653,0.7328350493402774
+87,RandomForestClassifier(),25,2,0.7823361823361823,0.7013016831386155
+88,RandomForestClassifier(),25,3,0.9727272727272727,0.9459028235484201
+89,RandomForestClassifier(),26,1,0.6142857142857142,0.7047389418437394
+90,RandomForestClassifier(),26,2,0.6118951612903225,0.7178353038422582
+91,RandomForestClassifier(),26,3,0.4882352941176471,0.8532756560850601
+92,RandomForestClassifier(),27,1,1.0,-0.0
+93,RandomForestClassifier(),27,2,1.0,-0.0
+94,RandomForestClassifier(),27,3,1.0,-0.0
+95,RandomForestClassifier(),28,1,1.0,-0.0
+96,RandomForestClassifier(),28,2,1.0,-0.0
+97,RandomForestClassifier(),28,3,1.0,-0.0
+98,RandomForestClassifier(),29,1,0.9866666666666667,0.4644498013697114
+99,RandomForestClassifier(),29,2,0.96,0.40850730596409157
+100,RandomForestClassifier(),29,3,1.0,-0.0
+101,RandomForestClassifier(),30,1,0.9795402298850575,0.49503405775367276
+102,RandomForestClassifier(),30,2,0.973103448275862,0.7347573715029135
+103,RandomForestClassifier(),30,3,0.9870967741935484,0.445736789164744
+104,RandomForestClassifier(),31,1,1.0,-0.0
+105,RandomForestClassifier(),31,2,1.0,-0.0
+106,RandomForestClassifier(),31,3,1.0,-0.0
+107,RandomForestClassifier(),32,1,0.9888888888888889,0.19987079268796998
+108,RandomForestClassifier(),32,2,1.0,-0.0
+109,RandomForestClassifier(),33,1,1.0,-0.0
+110,RandomForestClassifier(),33,2,1.0,-0.0
+111,RandomForestClassifier(),33,3,1.0,-0.0
+112,RandomForestClassifier(),35,1,1.0,-0.0
+113,RandomForestClassifier(),35,2,1.0,-0.0
+114,RandomForestClassifier(),36,1,0.7815384615384614,0.768591939202003
+115,RandomForestClassifier(),36,2,0.8460591133004925,0.6631832107493815
+116,RandomForestClassifier(),36,3,0.7029885057471265,0.6113430653189026
+117,RandomForestClassifier(),37,1,0.9777777777777779,0.40915324550097554
+118,RandomForestClassifier(),37,2,0.5326881720430107,0.7318362686497751
+119,RandomForestClassifier(),37,3,0.4943181818181818,1.015483831444388
+120,AdaBoostClassifier(),21,1,0.9560846560846562,0.19518861472183152
+121,AdaBoostClassifier(),21,2,1.0,-0.0
+122,AdaBoostClassifier(),21,3,1.0,-0.0
+123,AdaBoostClassifier(),23,1,0.9652709359605911,0.16542104140159206
+124,AdaBoostClassifier(),23,2,0.9324137931034482,0.26811944203666743
+125,AdaBoostClassifier(),23,3,0.6637931034482759,0.6628449750355374
+126,AdaBoostClassifier(),25,1,0.5916073968705546,0.6896883805956522
+127,AdaBoostClassifier(),25,2,0.7521367521367521,0.6308560268457951
+128,AdaBoostClassifier(),25,3,0.9636363636363636,0.25228722787197894
+129,AdaBoostClassifier(),26,1,0.5714285714285714,0.7030692642375368
+130,AdaBoostClassifier(),26,2,0.5983870967741935,0.6652076697407142
+131,AdaBoostClassifier(),26,3,0.45966386554621846,0.7011064354034545
+132,AdaBoostClassifier(),27,1,1.0,-0.0
+133,AdaBoostClassifier(),27,2,1.0,-0.0
+134,AdaBoostClassifier(),27,3,1.0,-0.0
+135,AdaBoostClassifier(),28,1,1.0,-0.0
+136,AdaBoostClassifier(),28,2,1.0,-0.0
+137,AdaBoostClassifier(),28,3,1.0,-0.0
+138,AdaBoostClassifier(),29,1,0.9800000000000001,0.3883495717864447
+139,AdaBoostClassifier(),29,2,0.9359999999999999,0.2509081585155412
+140,AdaBoostClassifier(),29,3,1.0,-0.0
+141,AdaBoostClassifier(),30,1,0.9726436781609197,0.26874044977713957
+142,AdaBoostClassifier(),30,2,0.9662068965517241,0.19854971316760428
+143,AdaBoostClassifier(),30,3,0.9870967741935484,0.4456719482882698
+144,AdaBoostClassifier(),31,1,1.0,-0.0
+145,AdaBoostClassifier(),31,2,1.0,-0.0
+146,AdaBoostClassifier(),31,3,1.0,-0.0
+147,AdaBoostClassifier(),32,1,0.9944444444444445,0.19188653329078306
+148,AdaBoostClassifier(),32,2,1.0,-0.0
+149,AdaBoostClassifier(),33,1,1.0,-0.0
+150,AdaBoostClassifier(),33,2,1.0,-0.0
+151,AdaBoostClassifier(),33,3,1.0,-0.0
+152,AdaBoostClassifier(),35,1,1.0,-0.0
+153,AdaBoostClassifier(),35,2,1.0,-0.0
+154,AdaBoostClassifier(),36,1,0.7347692307692307,0.6574498475926964
+155,AdaBoostClassifier(),36,2,0.7842364532019704,0.6225903850286808
+156,AdaBoostClassifier(),36,3,0.6629885057471265,0.6771097506038164
+157,AdaBoostClassifier(),37,1,0.9777777777777779,0.5211745666452859
+158,AdaBoostClassifier(),37,2,0.5653763440860216,0.6894546518804061
+159,AdaBoostClassifier(),37,3,0.5259469696969697,0.6974014620815622
+160,"SVC(kernel='linear', probability=True)",21,1,0.9708994708994709,0.12285636667571213
+161,"SVC(kernel='linear', probability=True)",21,2,1.0,-0.0
+162,"SVC(kernel='linear', probability=True)",21,3,1.0,-0.0
+163,"SVC(kernel='linear', probability=True)",23,1,0.972167487684729,0.13416539848419368
+164,"SVC(kernel='linear', probability=True)",23,2,0.9528735632183908,0.2038979148462682
+165,"SVC(kernel='linear', probability=True)",23,3,0.6334975369458128,0.5456905068013247
+166,"SVC(kernel='linear', probability=True)",25,1,0.5483641536273115,0.6571799772802482
+167,"SVC(kernel='linear', probability=True)",25,2,0.811965811965812,0.4940693911853959
+168,"SVC(kernel='linear', probability=True)",25,3,0.9727272727272727,0.12341960071946226
+169,"SVC(kernel='linear', probability=True)",26,1,0.6142857142857142,0.6693017698278451
+170,"SVC(kernel='linear', probability=True)",26,2,0.6943548387096774,0.6042764386771498
+171,"SVC(kernel='linear', probability=True)",26,3,0.5976470588235294,0.6728811587269361
+172,"SVC(kernel='linear', probability=True)",27,1,1.0,-0.0
+173,"SVC(kernel='linear', probability=True)",27,2,1.0,-0.0
+174,"SVC(kernel='linear', probability=True)",27,3,1.0,-0.0
+175,"SVC(kernel='linear', probability=True)",28,1,1.0,-0.0
+176,"SVC(kernel='linear', probability=True)",28,2,1.0,-0.0
+177,"SVC(kernel='linear', probability=True)",28,3,1.0,-0.0
+178,"SVC(kernel='linear', probability=True)",29,1,0.9866666666666667,0.1294329875723561
+179,"SVC(kernel='linear', probability=True)",29,2,0.96,0.1299940396466269
+180,"SVC(kernel='linear', probability=True)",29,3,1.0,-0.0
+181,"SVC(kernel='linear', probability=True)",30,1,0.9795402298850575,0.07869698181822407
+182,"SVC(kernel='linear', probability=True)",30,2,0.973103448275862,0.13359077798074215
+183,"SVC(kernel='linear', probability=True)",30,3,0.9870967741935484,0.07433259790285643
+184,"SVC(kernel='linear', probability=True)",31,1,1.0,-0.0
+185,"SVC(kernel='linear', probability=True)",31,2,1.0,-0.0
+186,"SVC(kernel='linear', probability=True)",31,3,1.0,-0.0
+187,"SVC(kernel='linear', probability=True)",32,1,0.9888888888888889,0.021852306775411185
+188,"SVC(kernel='linear', probability=True)",32,2,1.0,-0.0
+189,"SVC(kernel='linear', probability=True)",33,1,1.0,-0.0
+190,"SVC(kernel='linear', probability=True)",33,2,1.0,-0.0
+191,"SVC(kernel='linear', probability=True)",33,3,1.0,-0.0
+192,"SVC(kernel='linear', probability=True)",35,1,1.0,-0.0
+193,"SVC(kernel='linear', probability=True)",35,2,1.0,-0.0
+194,"SVC(kernel='linear', probability=True)",36,1,0.8206153846153846,0.4701360149195721
+195,"SVC(kernel='linear', probability=True)",36,2,0.8532019704433497,0.4215474827965561
+196,"SVC(kernel='linear', probability=True)",36,3,0.7501149425287357,0.5567119447411619
+197,"SVC(kernel='linear', probability=True)",37,1,0.9777777777777779,0.052402913123664255
+198,"SVC(kernel='linear', probability=True)",37,2,0.6051612903225807,0.6840299052914324
+199,"SVC(kernel='linear', probability=True)",37,3,0.5678030303030303,0.7076465888517556
+200,SVC(probability=True),21,1,0.9708994708994709,0.1302777834779289
+201,SVC(probability=True),21,2,1.0,-0.0
+202,SVC(probability=True),21,3,1.0,-0.0
+203,SVC(probability=True),23,1,0.972167487684729,0.13541315746651977
+204,SVC(probability=True),23,2,0.9528735632183908,0.20919568847983813
+205,SVC(probability=True),23,3,0.7825123152709359,0.520721387528731
+206,SVC(probability=True),25,1,0.7092460881934566,0.6129179430406503
+207,SVC(probability=True),25,2,0.811965811965812,0.4882202916868373
+208,SVC(probability=True),25,3,0.9727272727272727,0.1181285382993242
+209,SVC(probability=True),26,1,0.6142857142857142,0.7048724708531088
+210,SVC(probability=True),26,2,0.6881048387096774,0.6221119267191442
+211,SVC(probability=True),26,3,0.6265546218487394,0.6842321330643278
+212,SVC(probability=True),27,1,1.0,-0.0
+213,SVC(probability=True),27,2,1.0,-0.0
+214,SVC(probability=True),27,3,1.0,-0.0
+215,SVC(probability=True),28,1,1.0,-0.0
+216,SVC(probability=True),28,2,1.0,-0.0
+217,SVC(probability=True),28,3,1.0,-0.0
+218,SVC(probability=True),29,1,0.9866666666666667,0.06371712150193193
+219,SVC(probability=True),29,2,0.96,0.17796921615432235
+220,SVC(probability=True),29,3,1.0,-0.0
+221,SVC(probability=True),30,1,0.9795402298850575,0.11607538839869927
+222,SVC(probability=True),30,2,0.973103448275862,0.11981860642025428
+223,SVC(probability=True),30,3,0.9870967741935484,0.05823602287676381
+224,SVC(probability=True),31,1,1.0,-0.0
+225,SVC(probability=True),31,2,1.0,-0.0
+226,SVC(probability=True),31,3,1.0,-0.0
+227,SVC(probability=True),32,1,0.9888888888888889,0.02108866810961404
+228,SVC(probability=True),32,2,1.0,-0.0
+229,SVC(probability=True),33,1,1.0,-0.0
+230,SVC(probability=True),33,2,1.0,-0.0
+231,SVC(probability=True),33,3,1.0,-0.0
+232,SVC(probability=True),35,1,1.0,-0.0
+233,SVC(probability=True),35,2,1.0,-0.0
+234,SVC(probability=True),36,1,0.8206153846153846,0.4772892126811673
+235,SVC(probability=True),36,2,0.8532019704433497,0.42302090796715175
+236,SVC(probability=True),36,3,0.7501149425287357,0.5624889522915849
+237,SVC(probability=True),37,1,0.9777777777777779,0.10081766008109665
+238,SVC(probability=True),37,2,0.5778494623655913,0.6861795200881111
+239,SVC(probability=True),37,3,0.6178030303030303,0.6816898332627543
