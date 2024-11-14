@@ -35,6 +35,7 @@ def average_time_within_radius(df, target_x, target_y, target_z, radius=.05):
     
     # Filter points within 5 cm
     within_radius = df[df['distance'] <= radius]
+    within_radius = within_radius[within_radius['time_to_press'] > 0]
     
     # Calculate average time
     average_time = within_radius['time_to_press'].mean()

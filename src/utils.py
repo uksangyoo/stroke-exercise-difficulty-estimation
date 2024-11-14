@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
+EVAL_PIDS = [27,31,37,32,33,23,36] #random split
+
 def get_train_test_data():
     '''
     Returns a list of datasets to use for each participant for each visit. It outputs all of
@@ -19,7 +21,8 @@ def get_train_test_data():
 
         #further seperate by visit
         for visit in stroke_data['visit'].unique():
-            visit_data = pid_data.query(f'visit == "{visit}"').copy()
+            visit_data = pid_data.query(f'visit == "{visit}" & time_to_press > 0').copy()
+            visit_data.dropna(inplace=True)
 
             #ignore the visit if it has less than 10 data points
             if len(visit_data) < 10:
@@ -46,6 +49,8 @@ def get_train_test_data():
                 'stroke_y_test': strokey_test[:,1].flatten(),
                 'neuro_X_train': neuroX_train,
                 'neuro_y_train': neuroy_train.flatten(),
+                'pid': pid,
+                'visit': visit
             })
 
     return datasets
