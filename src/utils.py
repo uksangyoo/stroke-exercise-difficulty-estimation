@@ -11,6 +11,8 @@ def get_train_test_data():
     testing, we are interested in the averaged value for the gt_difficulty. 
     '''
     stroke_data = pd.read_csv('../simplified_data/poststroke_data.csv')
+    # stroke_data = stroke_data.query('time_to_press < 5 and time_to_press > 0')
+
     neurotypical_data = pd.read_csv('../simplified_data/neurotypical_data.csv')
 
     datasets = []

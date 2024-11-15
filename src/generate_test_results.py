@@ -23,8 +23,9 @@ test_datasets = [dataset for dataset in datasets if dataset['pid'] not in EVAL_P
 
 results = []
 
+#models with their assocaited tuned hyperparameters
 models = [
-    {'name': 'CausalForestDML', 'model': CausalForestDML(discrete_treatment=True)},
+    {'name': 'CausalForestDML', 'model': CausalForestDML(discrete_treatment=True, n_estimators=100, min_samples_leaf=5)},
     {'name': 'RandomForestRegressor', 'model': RandomForestRegressor()},
     {'name': 'GradientBoostingRegressor', 'model': GradientBoostingRegressor()},
     {'name': 'DecisionTreeRegressor', 'model': DecisionTreeRegressor()},
@@ -63,6 +64,7 @@ for model in models:
             # Test the models
             preds = stroke_model.predict(dataset['stroke_X_test']) - neurotypical_model.predict(dataset['stroke_X_test'])
 
+        #log the results
         results.append({
             'pid': dataset['pid'],
             'visit': dataset['visit'],
