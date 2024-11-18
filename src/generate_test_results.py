@@ -10,7 +10,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.svm import SVR
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.neural_network import MLPRegressor
-#causal tree
+#causal tree, from https://econml.azurewebsites.net/_autosummary/econml.dml.CausalForestDML.html 
 from econml.dml import CausalForestDML
 
 #evaluation
@@ -25,7 +25,7 @@ results = []
 
 #models with their assocaited tuned hyperparameters
 models = [
-    {'name': 'CausalForestDML', 'model': CausalForestDML(discrete_treatment=True, n_estimators=100, min_samples_leaf=5)},
+    {'name': 'CausalForestDML', 'model': CausalForestDML(discrete_treatment=True)},
     {'name': 'RandomForestRegressor', 'model': RandomForestRegressor()},
     {'name': 'GradientBoostingRegressor', 'model': GradientBoostingRegressor()},
     {'name': 'DecisionTreeRegressor', 'model': DecisionTreeRegressor()},

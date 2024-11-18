@@ -21,39 +21,53 @@ def get_train_test_data():
     for pid in stroke_data['pid'].unique():
         pid_data = stroke_data.query(f'pid == {pid}').copy()
 
-        #further seperate by visit
-        for visit in stroke_data['visit'].unique():
-            visit_data = pid_data.query(f'visit == "{visit}" & time_to_press > 0').copy()
-            visit_data.dropna(inplace=True)
+        # #further seperate by visit
+        # for visit in stroke_data['visit'].unique():
+        # visit_data = pid_data.query(f'visit == "{visit}" & time_to_press > 0').copy()
+        visit_data = pid_data.query('time_to_press > 0').copy()
+        visit_data.dropna(inplace=True)
 
-            #ignore the visit if it has less than 10 data points
-            if len(visit_data) < 10:
-                continue
+        #ignore the visit if it has less than 10 data points
+        if len(visit_data) < 10:
+            continue
 
-            side = visit_data['side'].iloc[0]
-            
-            X = visit_data[['x','y','z']].values
-            y = visit_data[['time_to_press', 'gt_difficulty']].values
+        side = visit_data['side'].iloc[0]
 
-            strokeX_train, strokeX_test, strokey_train, strokey_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        # X = visit_data[['x','y','z']].values
+        X = get_features(visit_data)
+        y = visit_data[['time_to_press', 'gt_difficulty']].values
 
-            #get the neurotypical data for this side
-            neurotypical_slice = neurotypical_data.query(f'side == "{side}"').copy()
-            X = neurotypical_slice[['x','y','z']].values
-            y = neurotypical_slice[['time_to_press']].values
+        strokeX_train, strokeX_test, strokey_train, strokey_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-            neuroX_train, neuroy_train = X, y
+        #get the neurotypical data for this side
+        neurotypical_slice = neurotypical_data.query(f'side == "{side}"').copy()
+        # X = neurotypical_slice[['x','y','z']].values
+        X = get_features(neurotypical_slice)
+        y = neurotypical_slice[['time_to_press']].values
 
-            datasets.append({
-                'stroke_X_train': strokeX_train,
-                'stroke_X_test': strokeX_test,
-                'stroke_y_train': strokey_train[:,0].flatten(),
-                'stroke_y_test': strokey_test[:,1].flatten(),
-                'neuro_X_train': neuroX_train,
-                'neuro_y_train': neuroy_train.flatten(),
-                'pid': pid,
-                'visit': visit
-            })
+        neuroX_train, neuroy_train = X, y
+
+        datasets.append({
+            'stroke_X_train': strokeX_train,
+            'stroke_X_test': strokeX_test,
+            'stroke_y_train': strokey_train[:,0].flatten(),
+            'stroke_y_test': strokey_test[:,1].flatten(),
+            'neuro_X_train': neuroX_train,
+            'neuro_y_train': neuroy_train.flatten(),
+            'pid': pid,
+            'visit': 0
+        })
 
     return datasets
 
+def get_features(data):
+    '''
+    Extract the features from the data
+    '''
+    data['distance'] = np.sqrt(data['x']**2 + data['y']**2 + data['z']**2)
+    data['rand'] = np.random.randint(0, 4, len(data))
+    data['x^2'] = data['x']**2
+    data['y^2'] = data['y']**2
+    data['z^2'] = data['z']**2
+
+    return data[['x','y','z', 'distance', 'x^2']].values
