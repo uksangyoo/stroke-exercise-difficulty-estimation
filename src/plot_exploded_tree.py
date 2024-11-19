@@ -146,6 +146,10 @@ def plot_tree(interp):
 
 
 def plot_tree_trans(interp):
+    '''
+    This function generates a 3D plot with exploded views of the different regions/nodes
+    Change group_offset_scales_x, group_offset_scales_y, and group_offset_scales_z to adjust the spacing between the exploded views and the original view
+    '''
     color_bar_huh = True
     cols = ['x','y','z','distance','x_squared']
     group_dict = get_groups(interp.tree_model_.tree_, cols)
@@ -202,16 +206,17 @@ def plot_tree_trans(interp):
 
     PCM=ax.get_children()[12]
     if color_bar_huh:
-        cbar = plt.colorbar(PCM, ax=ax, location='left', shrink=.7, pad=.05)
+        cbar = plt.colorbar(PCM, ax=ax, location='bottom', shrink=.7, pad=.2)
         cbar.set_label('Additional Time to Reach (s)')
         cbar.solids.set(alpha=1)
 
     unique_effects = data['causal_effect'].unique()
+    print("Unique effects: ", unique_effects)
     indices_dict = {effect: data.index[data['causal_effect'] == effect].tolist() for effect in unique_effects}
     centroids = {effect: data.loc[indices_dict[effect], ['x','y','z']].mean().values for effect in unique_effects}
-    group_offset_scales_x = [2, 1.5, 5, 2, 1.7, 2, 100]
-    group_offset_scales_y = [2, 1.5, 2, 2, 1, 2, 100]
-    group_offset_scales_z = [2, 2, 2, 0.6, 1, 1, 100]
+    group_offset_scales_x = [2, 1.5, 8, 2, 2, 2, 2]
+    group_offset_scales_y = [2, 1.5, 2, 2, 1, 2, 2]
+    group_offset_scales_z = [2, 2.2, 2, 0.6, 1, 1, 2]
     for effect, indices in indices_dict.items():
         centroid = centroids[effect]
         offset_x = centroid[0] * group_offset_scales_x[list(unique_effects).index(effect)]
@@ -234,9 +239,10 @@ def plot_tree_trans(interp):
 if __name__ == '__main__':
     # the PID of the partipant to plot
     PID = 27
+    random_seed = 0
     datasets = get_train_test_data()
 
-    np.random.seed(0)  # Set the random seed for reproducibility
+    np.random.seed(random_seed)  # Set the random seed for reproducibility
 
     for dataset in datasets:
         # skip over datasets that aren't the target participant
@@ -244,7 +250,7 @@ if __name__ == '__main__':
             continue
 
         # First, fit the causal forest
-        model = CausalForestDML(discrete_treatment=True, random_state=0)
+        model = CausalForestDML(discrete_treatment=True, random_state=random_seed)
         X = np.concatenate([dataset['stroke_X_train'], dataset['neuro_X_train']])
         y = np.concatenate([dataset['stroke_y_train'], dataset['neuro_y_train']])
 
